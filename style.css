@@ -172,30 +172,36 @@ footer {
 .menu_bar {
     z-index: 2;
     position: fixed;
-    background-color: rgb(185, 185, 185);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #ff3333;
-    border-radius: 5px;
-    max-width: 64px;
-    width: 64px;
-    height: 99.55%;
-    padding: 0;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 100vh;
+    background-color: #2b2d33;
+    border-right: 2px solid #7b6ef6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 }
 
 .menu_button {
-    background-color: rgb(185, 185, 185);
+    width: 38px;
+    height: 38px;
+    background-color: #32353c;
     background-image: url(../icons/home.png);
     background-repeat: no-repeat;
-    background-size: 64px;
+    background-size: 20px;
     background-position: center;
-    border: 1px solid rgb(185, 185, 185);
-    border-radius: 5px;
-    max-width: 64px;
-    max-height: 64px;
-    width: 64px;
-    height: 64px;
+    border: 1px solid #7b6ef6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 200ms ease, box-shadow 200ms ease;
     padding: 0;
+}
+
+.menu_button:hover {
+    background-color: #3d404a;
+    box-shadow: 0 0 8px rgba(123, 110, 246, 0.5);
 }
 
 .live_search {
