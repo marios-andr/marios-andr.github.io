@@ -2,44 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marios Domain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marios Andreou</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <script src="main.js"></script>
 
 <body>
 
-<h1>Physics Simulations:</h1>
+    <header>
+        <div class="name-block">
+            <h1 class="site-title">Marios Andreou</h1>
+            <p class="site-subtitle">Physics &amp; Mathematics Projects</p>
+        </div>
+        <div class="header-line"></div>
+    </header>
 
-<button class="button-64" role="button" onclick="rootRedirect('Simulations/Pendulum.html')">
-    <span class="text">Pendulum</span>
-</button>
+    <main>
+        <section class="project-section">
+            <h2 class="section-label"><span class="label-tag">⦿</span> Physics Simulations</h2>
+            <div class="button-group">
+                <button class="project-btn" onclick="rootRedirect('Simulations/Pendulum.html')">
+                    Pendulum
+                </button>
+                <button class="project-btn" onclick="rootRedirect('Simulations/Colliding-Blocks.html')">
+                    Collisions
+                </button>
+            </div>
+        </section>
 
-<button class="button-64" role="button" onclick="rootRedirect('Simulations/Colliding-Blocks.html')">
-    <span class="text">Collisions</span>
-</button>
+        <section class="project-section">
+            <h2 class="section-label"><span class="label-tag">∑</span> Mathematics Projects</h2>
+            <div class="button-group">
+                <button class="project-btn" onclick="rootRedirect('Simulations/Graphing-Calculator.html')">
+                    Graphing API
+                </button>
+                <button class="project-btn" onclick="rootRedirect('Simulations/Mandelbrot.html')">
+                    Mandelbrot Set
+                </button>
+                <button class="project-btn" onclick="rootRedirect('Simulations/IrrationalityVisualization.html')">
+                    Irrationality Visualization
+                </button>
+            </div>
+        </section>
 
-<h1>Mathematics Projects:</h1>
+        <section class="project-section">
+            <h2 class="section-label"><span class="label-tag">◈</span> Other Projects</h2>
+            <div class="button-group">
+                <button class="project-btn" onclick="rootRedirect('Other/LatexParser.html')">
+                    LaTeX Parser
+                </button>
+            </div>
+        </section>
+    </main>
 
-<button class="button-64" role="button" onclick="rootRedirect('Simulations/Graphing-Calculator.html')">
-    <span class="text">Graphing API</span>
-</button>
-
-<button class="button-64" role="button" onclick="rootRedirect('Simulations/Mandelbrot.html')">
-    <span class="text">Mandelbrot Set</span>
-</button>
-
-<button class="button-64" role="button" onclick="rootRedirect('Simulations/IrrationalityVisualization.html')">
-    <span class="text">Irrationality Visualization</span>
-</button>
-
-<h1>Other Projects:</h1>
-
-<button class="button-64" role="button" onclick="rootRedirect('Other/LatexParser.html')">
-    <span class="text">Latex Parser</span>
-</button>
+    <footer>
+        <span>marios-andr.github.io</span>
+    </footer>
 
 </body>
 </html>
